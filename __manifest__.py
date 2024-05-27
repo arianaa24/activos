@@ -16,7 +16,7 @@
     'category': 'Uncategorized',
     'version': '0.1',
 
-    'depends': ['base', 'account_asset', 'stock'],
+    'depends': ['base', 'account_asset', 'stock', 'hr'],
 
     'data': [
         'views/account_asset_views.xml',
