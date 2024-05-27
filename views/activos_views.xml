@@ -1,4 +1,4 @@
-<openerp>
+<odoo>
     <data>
 
         <record model="ir.ui.view" id="activos_localidad_tree">
@@ -68,4 +68,4 @@
         <menuitem parent="account.menu_finance_entries_management" id="menu_action_account_asset_asset_area_form" action="activos_action_account_asset_asset_area_form" sequence="101" groups="account.group_account_user"/>
 
     </data>
-</openerp>
+</odoo>
