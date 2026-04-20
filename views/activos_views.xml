@@ -5,9 +5,9 @@
             <field name="name">activos.localidad.tree</field>
             <field name="model">activos.localidad</field>
             <field name="arch" type="xml">
-                <tree string="Localidad">
+                <list string="Localidad">
                     <field name="name"/>
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -28,19 +28,19 @@
         <record model="ir.actions.act_window" id="activos_action_account_asset_asset_localidad_form">
             <field name="name">Localidad</field>
             <field name="res_model">activos.localidad</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="view_id" ref="activos_localidad_tree"/>
         </record>
 
-        <menuitem parent="account.menu_finance_entries_management" id="menu_action_account_asset_asset_localidad_form" action="activos_action_account_asset_asset_localidad_form" sequence="101" groups="account.group_account_user"/>
+        <menuitem parent="account.menu_finance_entries" id="menu_action_account_asset_asset_localidad_form" action="activos_action_account_asset_asset_localidad_form" sequence="101" groups="account.group_account_user"/>
 
         <record model="ir.ui.view" id="activos_area_tree">
             <field name="name">activos.area.tree</field>
             <field name="model">activos.area</field>
             <field name="arch" type="xml">
-                <tree string="Area">
+                <list string="Area">
                     <field name="name"/>
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -61,11 +61,11 @@
         <record model="ir.actions.act_window" id="activos_action_account_asset_asset_area_form">
             <field name="name">Area</field>
             <field name="res_model">activos.area</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="view_id" ref="activos_area_tree"/>
         </record>
 
-        <menuitem parent="account.menu_finance_entries_management" id="menu_action_account_asset_asset_area_form" action="activos_action_account_asset_asset_area_form" sequence="101" groups="account.group_account_user"/>
+        <menuitem parent="account.menu_finance_entries" id="menu_action_account_asset_asset_area_form" action="activos_action_account_asset_asset_area_form" sequence="101" groups="account.group_account_user"/>
 
     </data>
 </odoo>
